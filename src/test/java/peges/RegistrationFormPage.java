@@ -114,6 +114,11 @@ public class RegistrationFormPage {
         return this;
     }
 
+    public RegistrationFormPage checkTitleResult() {
+        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        return this;
+    }
+
     public RegistrationFormPage pressClose() {
         closePress.click();
         return this;
